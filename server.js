@@ -21,10 +21,15 @@ const pool = mysql.createPool({
 });
 
 
-// 🚀 これを追加（public を静的配信）- APIルートより後に配置
-app.use(express.static('public'));
-app.use('/public', express.static('public'));
+// 🚀 Serve React build output
+app.use(express.static('dist'));
 app.use('/image', express.static('image'));
+
+// SPA fallback - serve index.html for all non-API routes
+const path = require('path');
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
 
 // サーバー起動
 app.listen(3002, '0.0.0.0', () => {
