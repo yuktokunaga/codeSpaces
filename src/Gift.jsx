@@ -75,14 +75,14 @@ function Gifts({ onAddToCart }) {
       </div>
 
       {/* Collection Grid */}
-      <div className="max-w-300 grid grid-cols-3 gap-15">
+      <div className="max-w-350 mx-auto grid grid-cols-3 gap-15">
         {giftCollections.map((collection) => (
-          <div key={collection.id} className="bg-white border border-zinc-200 rounded-2xl flex flex-col transition-all duration-300 overflow-hidden">
+          <div key={collection.id} className="bg-white border border-zinc-200 rounded-2xl flex flex-col transition-all duration-300 overflow-hidden p-6">
             
             <div className="flex flex-col h-full">
             {/* 4-Image Cluster Layout */}
-              <div className="mb-12">
-                <div className="bg-white grid grid-cols-2 gap-3.5 p-0.5">
+              <div className="mb-10">
+                <div className="bg-white grid grid-cols-2 gap-4 p-1">
                   {collection.teas.slice(0, 4).map((img, index) => (
                     <div key={index} className=" bg-white aspect-square overflow-hidden scale-105 hover:scale-110 transition-transform duration-300">
                       <img 
@@ -97,7 +97,7 @@ function Gifts({ onAddToCart }) {
             </div>
 
             {/* Content Section */}
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-5">
               <div>
                 <h3 className="text-3xl h-18 font-['Playfair_Display'] font-bold text-zinc-900 mb-3 border-b-2 border-japanet-red pb-2 flex justify-center items-center">
                   {collection.name}
@@ -125,14 +125,13 @@ function Gifts({ onAddToCart }) {
                     ¥{collection.basePrice}
                   </p>
                 </div>
-                {/* <div className=''> */}
+                
                   <button 
                     onClick={() => onAddToCart(collection.id)}
                     className="bg-red-700 text-white w-25 h-5 text-sm font-bold  hover:bg-red-500 transition-colors rounded-[.25em]"
                   >
                     Add to Cart
                   </button>
-                {/* </div> */}
               </div>
             </div>
           </div>
