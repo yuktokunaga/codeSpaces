@@ -116,7 +116,7 @@ function Gifts({ onAddToCart }) {
                 </div>
               </div>
 
-              <div className="w-full flex items-center justify-between pt-4 border-t border-zinc-100">
+              <div className="w-full flex items-center justify-between pt-4 ">
                 <div>
                   <p className="text-2xl font-['Playfair_Display'] font-bold text-japanet-red">
                     ¥{Math.round(collection.basePrice * 0.9)}
