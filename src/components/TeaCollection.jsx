@@ -15,61 +15,61 @@ import herbal from "../assets/images/herbal.jpg";
 const teas = [
   {
     name: "Darjeeling Tea",
-    price: "₹1800",
+    price: "¥1800",
     benefit: "Improves digestion and immunity",
     image: darjeeling
   },
   {
     name: "Earl Grey",
-    price: "₹1200",
+    price: "¥1200",
     benefit: "Reduces stress and boosts heart health",
     image: earlgrey
   },
   {
     name: "Assam Tea",
-    price: "₹1000",
+    price: "¥1000",
     benefit: "Boosts energy and improves focus",
     image: assam
   },
   {
     name: "Chamomile",
-    price: "₹980",
+    price: "¥980",
     benefit: "Helps in relaxation and sleep",
     image: chamomile
   },
   {
     name: "Matcha",
-    price: "₹2500",
+    price: "¥2500",
     benefit: "Rich in antioxidants",
     image: matcha
   },
   {
     name: "Oolong Tea",
-    price: "₹1600",
+    price: "¥1600",
     benefit: "Supports weight management",
     image: oolong
   },
   {
     name: "Green Tea",
-    price: "₹900",
+    price: "¥900",
     benefit: "Improves metabolism",
     image: green
   },
   {
     name: "White Tea",
-    price: "₹2000",
+    price: "¥2000",
     benefit: "Anti-aging properties",
     image: white
   },
   {
     name: "Masala Tea",
-    price: "₹800",
+    price: "¥800",
     benefit: "Boosts immunity and warmth",
     image: masala
   },
   {
     name: "Herbal Mix",
-    price: "₹1100",
+    price: "¥1100",
     benefit: "Detox and relaxation",
     image: herbal
   }
