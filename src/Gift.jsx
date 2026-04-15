@@ -1,5 +1,4 @@
 import React from 'react';
-/* Importing your individual tea assets */
 import darjeeling from "./assets/images/Darjeeling.jpg";
 import earlgrey from "./assets/images/earl.jpg";
 import assam from "./assets/images/assam.jpg";
