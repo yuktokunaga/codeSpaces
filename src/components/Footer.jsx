@@ -45,7 +45,7 @@ const Footer = () => {
 
           {/* newsletter registrations options */}
           <div className="flex flex-col items-start">
-            <h4 className="text-[11px] tracking-[0.3em] font-bold text-zinc-200 uppercase">Join the Ceremony</h4>
+            <h4 className="text-[11px] tracking-[0.3em] font-['Playfair_Display'] text-zinc-200 uppercase">Join the Ceremony</h4>
             <p className="text-[11px] tracking-widest opacity-80 uppercase">Get 10% off your first harvest.</p>
             <form className="w-full flex border-b border-zinc-800 pb-3 focus-within:border-red-600 transition-colors">
               <input 
