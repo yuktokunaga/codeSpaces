@@ -61,7 +61,7 @@ function Header({ cartCount }) {
           </NavLink>
 
           <NavLink
-            to="/gifts"
+            to="/gift"
             className={({ isActive }) =>
               isActive ? "nav-link active" : "nav-link"
             }
