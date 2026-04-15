@@ -1,4 +1,18 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .bg-japanet-red {
+    background: linear-gradient(135deg, #b5302a 0%, #c0392b 50%, #d44332 100%);
+  }
+
+  .border-japanet-red {
+    border-style: solid;
+    border-image-source: linear-gradient(135deg, #b5302a 0%, #c0392b 50%, #d44332 100%);
+    border-image-slice: 1;
+  }
+
+}
+
 * {
     margin: 0;
     padding: 0;
