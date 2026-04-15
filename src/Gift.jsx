@@ -63,10 +63,10 @@ const giftCollections = [
 
 function Gifts({ onAddToCart }) {
   return (
-    <div className="bg-stone-50 font-sans w-full flex flex-col items-center">
+    <div className="bg-red-100 font-sans w-full flex flex-col items-center">
       {/* Hero Header */}
-      <div className="pt-24 pb-20 text-center h-15">
-        <h1 className="text-5xl font-['Playfair_Display'] font-bold text-zinc-900 mb-6 italic">
+      <div className=" pt-24 pb-20 text-center h-15">
+        <h1 className="text-5xl font-['Playfair_Display'] font-bold text-zinc-900 italic">
           Gift your family and friends with delicious health
         </h1>
         {/* <p className="text-zinc-500 tracking-[0.3em] uppercase text-[12px] font-bold">
@@ -75,25 +75,29 @@ function Gifts({ onAddToCart }) {
       </div>
 
       {/* Collection Grid */}
-      <div className="max-w-315 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="max-w-300 grid grid-cols-3 gap-15">
         {giftCollections.map((collection) => (
-          <div key={collection.id} className="bg-white border border-zinc-200 shadow-sm flex flex-col hover:shadow-lg transition-all duration-300 overflow-hidden">
+          <div key={collection.id} className="bg-white border border-zinc-200 rounded-2xl flex flex-col transition-all duration-300 overflow-hidden">
             
+            <div className="flex flex-col h-full">
             {/* 4-Image Cluster Layout */}
-            <div className="grid grid-cols-2 gap-4 bg-zinc-100 p-0.5">
-              {collection.teas.slice(0, 4).map((img, index) => (
-                <div key={index} className="aspect-square overflow-hidden bg-white scale-105 hover:scale-110 transition-transform duration-300">
-                  <img 
-                    src={img} 
-                    alt="Tea component" 
-                    className="w-full h-full object-cover hover:grayscale-0 transition-all duration-300" 
-                  />
+              <div className="mb-12">
+                <div className="bg-white grid grid-cols-2 gap-3.5 p-0.5">
+                  {collection.teas.slice(0, 4).map((img, index) => (
+                    <div key={index} className=" bg-white aspect-square overflow-hidden scale-105 hover:scale-110 transition-transform duration-300">
+                      <img 
+                        src={img} 
+                        alt="Tea component" 
+                        className="w-full h-full object-cover rounded-2xl hover:grayscale-0 transition-all duration-300" 
+                      />
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
 
             {/* Content Section */}
-            <div className="p-6 flex flex-col items-start justify-between">
+            <div className="flex flex-col">
               <div>
                 <h3 className="text-3xl h-18 font-['Playfair_Display'] font-bold text-zinc-900 mb-3 border-b-2 border-japanet-red pb-2 flex justify-center items-center">
                   {collection.name}
@@ -101,32 +105,34 @@ function Gifts({ onAddToCart }) {
                 
                 <div className="space-y-3 mb-6 text-left">
                   <div>
-                    <span className="text-[8px] font-bold text-zinc-400 uppercase tracking-widest block mb-1">Includes:</span>
-                    <p className="text-xs text-white bg-japanet-red h-10 leading-relaxed">{collection.consistsOf}</p>
+                    <span className="text-[8px] font-bold text-black uppercase tracking-widest block mb-1">Includes:</span>
+                    <p className="text-[12px] text-white bg-japanet-red h-8 italic items-center">{collection.consistsOf}</p>
                   </div>
 
                   <div>
-                    <span className="text-[8px] font-bold text-zinc-400 uppercase tracking-widest block mb-1">Perfect for:</span>
-                    <p className="text-xs text-zinc-600 leading-relaxed font-light">{collection.occasion}</p>
+                    {/* <span className="text-[8px] font-bold text-black uppercase tracking-widest block mb-1">Perfect for:</span> */}
+                    <p className="text-[13px] text-white leading-relaxed font-light bg-japanet-red h-5 italic">{collection.occasion}</p>
                   </div>
                 </div>
               </div>
 
               <div className="w-full flex items-center justify-between pt-4 border-t border-zinc-100">
                 <div>
-                  <p className="text-2xl font-['Playfair_Display'] font-bold text-red-600">
+                  <p className="text-2xl font-['Playfair_Display'] font-bold text-japanet-red">
                     ¥{Math.round(collection.basePrice * 0.9)}
                   </p>
                   <p className="text-xs text-zinc-400 line-through">
                     ¥{collection.basePrice}
                   </p>
                 </div>
-                <button 
-                  onClick={() => onAddToCart(collection.id)}
-                  className="px-4 py-2 bg-zinc-950 text-white text-[9px] font-bold tracking-[0.2em] uppercase hover:bg-red-700 transition-colors duration-300"
-                >
-                  Add to Cart
-                </button>
+                {/* <div className=''> */}
+                  <button 
+                    onClick={() => onAddToCart(collection.id)}
+                    className="bg-red-700 text-white w-25 h-5 text-sm font-bold  hover:bg-red-500 transition-colors rounded-[.25em]"
+                  >
+                    Add to Cart
+                  </button>
+                {/* </div> */}
               </div>
             </div>
           </div>

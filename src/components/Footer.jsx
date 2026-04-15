@@ -17,7 +17,7 @@ const Footer = () => {
               A high-quality mail-order tea store for busy professionals and health-conscious seniors by providing expert-curated tea selections.
 
             </p>
-            <a href="https://corporate.japanet.co.jp/ja/" target="_blank" rel="noopener noreferrer" className="text-[11px] tracking-widest text-red-600 hover:text-red-500 transition-colors uppercase font-bold">
+            <a href="https://corporate.japanet.co.jp/ja/" target="_blank" rel="noopener noreferrer" className="text-[11px] tracking-widest text-red-700 hover:text-red-500 transition-colors uppercase font-bold">
               Visit Japanet Global →
             </a>
           </div>
@@ -26,10 +26,10 @@ const Footer = () => {
           <div className="flex flex-col items-start">
             <h4 className="text-[12px] tracking-[0.3em] font-['Playfair_Display'] font-bold text-zinc-200 uppercase">Customer Care</h4>
             <ul className="text-[11px] tracking-[0.3em] space-y-7 text-white">
-              <li><a href="#about" className="hover:text-red-600 transition-colors">About Us</a></li>
-              <li><a href="#reviews" className="hover:text-red-600 transition-colors">Customer Reviews</a></li>
-              <li><a href="#shipping" className="hover:text-red-600 transition-colors">Shipping & Returns</a></li>
-              <li><a href="#faq" className="hover:text-red-600 transition-colors">FAQ</a></li>
+              <li><a href="#about" className="hover:text-red-700 transition-colors">About Us</a></li>
+              <li><a href="#reviews" className="hover:text-red-700 transition-colors">Customer Reviews</a></li>
+              <li><a href="#shipping" className="hover:text-red-700 transition-colors">Shipping & Returns</a></li>
+              <li><a href="#faq" className="hover:text-red-700 transition-colors">FAQ</a></li>
             </ul>
           </div>
 
@@ -38,7 +38,7 @@ const Footer = () => {
             <h4 className="text-[12px] tracking-[0.3em] font-['Playfair_Display'] font-bold text-zinc-300 uppercase">Contact</h4>
             <div className="text-[11px] tracking-[0.3em] space-y-7 uppercase font-bold">
               <p className="opacity-80 leading-relaxed text-zinc-400">Nagasaki, Japanet</p>
-              <p className="text-red-600">support@japanettea.com</p>
+              <p className="text-red-700">support@japanettea.com</p>
               <p className="opacity-80 text-zinc-400">+81 350 TEA 825</p>
             </div>
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                 placeholder="EMAIL ADDRESS" 
                 className="bg-transparent border-none text-[11px] tracking-widest w-full focus:outline-none placeholder:text-white-200 text-white uppercase" 
               />
-              <button type="submit" className="text-red-600 text-[11px] font-bold tracking-widest hover:text-white transition-colors">JOIN</button>
+              <button type="submit" className="text-red-700 text-[11px] font-bold tracking-widest hover:text-white transition-colors">JOIN</button>
             </form>
           </div>
         </div>
