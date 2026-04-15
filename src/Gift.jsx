@@ -41,52 +41,54 @@ function Gifts({ onAddToCart }) {
   return (
     <div className="bg-stone-50 font-sans w-full flex flex-col items-center">
       {/* Hero Header */}
-      <div className="pt-24 pb-20 text-center px-8">
-        <h1 className="text-5xl font-['Playfair_Display'] font-bold text-zinc-900 mb-6 italic">
+      <div className="">
+        <h1 className="text-5xl font-['Playfair_Display'] font-bold text-zinc-900 italic">
           Gift your family and friends with delicious health
         </h1>
-        <p className="text-zinc-500 tracking-[0.3em] uppercase text-[12px] font-bold">
+        {/* <p className="text-zinc-500 tracking-[0.3em] uppercase text-[12px] font-bold">
           Hand-picked combinations for a better lifestyle
-        </p>
+        </p> */}
       </div>
 
       {/* Collection Grid */}
-      <div className="max-w-[1200px] mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <div className="max-w-315 mx-auto px-20 grid grid-cols-3 gap-10">
         {giftCollections.map((collection) => (
-          <div key={collection.id} className="bg-white border border-zinc-200 shadow-sm flex flex-col hover:shadow-2xl transition-all duration-500 overflow-hidden">
+          <div key={collection.id} className="bg-white flex flex-col hover:shadow-2xl transition-all duration-500 overflow-hidden">
             
             {/* 4-Image Cluster Layout */}
-            <div className="grid grid-cols-2 gap-1 bg-zinc-100 p-1">
-              {collection.teas.slice(0, 4).map((img, index) => (
-                <div key={index} className="aspect-square overflow-hidden bg-white">
-                  <img 
-                    src={img} 
-                    alt="Tea component" 
-                    className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500 scale-105 hover:scale-100" 
-                  />
+                <div className="grid grid-cols-2 gap-2 bg-zinc-100">
+                {collection.teas.slice(0, 4).map((img, index) => (
+                    <div key={index} className="aspect-square overflow-hidden bg-white p-10">
+                    <img 
+                        src={img} 
+                        alt="Tea component" 
+                        className="w-full h-full object-cover duration-500 scale-105 hover:scale-95 p-20" 
+                    />
+                    </div>
+                ))}
                 </div>
-              ))}
-            </div>
-
+                
             {/* Content Section */}
-            <div className="p-12 flex flex-col items-start">
-              <h3 className="text-3xl font-['Playfair_Display'] font-bold text-zinc-900 mb-6 border-b-2 border-red-600 pb-2">
+            <div className="flex flex-col items-center p-5 ">
+            <div>
+              <h3 className="text-3xl h-18 font-['Playfair_Display'] font-bold text-zinc-900">
                 {collection.name}
               </h3>
+              </div>
               
               <div className="space-y-6 mb-10 text-left">
                 <div>
-                  <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest block mb-2">This collection includes:</span>
-                  <p className="text-sm text-zinc-700 leading-relaxed italic">{collection.consistsOf}</p>
+                  <span className="text-[10px] font-bold border-t-2 border-red-600 text-zinc-400 uppercase tracking-widest block mb-2">This collection includes:</span>
+                  <p className="bg-red-700 text-sm w-98 h-12 text-white leading-relaxed italic">{collection.consistsOf}</p>
                 </div>
-
+{/* 
                 <div>
                   <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest block mb-2">Perfect Occasions:</span>
                   <p className="text-sm text-zinc-600 leading-relaxed font-light">{collection.occasion}</p>
-                </div>
+                </div> */}
               </div>
 
-              <div className="w-full flex items-center justify-between pt-6 border-t border-zinc-100">
+              <div className="w-full h-10 flex items-center justify-between border-t border-zinc-100">
                 <p className="text-3xl font-['Playfair_Display'] font-bold text-red-600">
                   ₹{collection.price.toLocaleString()}
                 </p>
