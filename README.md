@@ -14,21 +14,39 @@ codeSpaces
 ├─ key.pem
 ├─ package-lock.json
 ├─ package.json
+├─ postcss.config.js
 ├─ public
+│  ├─ images
+│  │  ├─ assam.jpg
+│  │  ├─ chamomile.jpg
+│  │  ├─ Darjeeling.jpg
+│  │  ├─ earl.jpg
+│  │  ├─ green.jpg
+│  │  ├─ herbal.jpg
+│  │  ├─ masala.jpg
+│  │  ├─ matcha.jpg
+│  │  ├─ oolong.jpg
+│  │  └─ white.jpg
 │  ├─ index.html
 │  ├─ logo.png
-│  ├─ main.js
 │  └─ style.css
+├─ README.md
 ├─ server.js
 ├─ src
 │  ├─ App.css
 │  ├─ App.jsx
+│  ├─ assets
 │  ├─ components
 │  │  ├─ Footer.jsx
 │  │  ├─ Header.jsx
 │  │  ├─ ProductCard.jsx
-│  │  └─ ProductList.jsx
+│  │  ├─ ProductList.jsx
+│  │  ├─ TeaCollection.css
+│  │  └─ TeaCollection.jsx
+│  ├─ Gift.jsx
 │  └─ main.jsx
+├─ tailwind.config.js
+├─ teas.json
 └─ vite.config.js
 
 ```

@@ -4,6 +4,7 @@ import Header from './components/Header';
 import ProductList from './components/ProductList';
 import Footer from './components/Footer';
 import TeaCollection from './components/TeaCollection';
+import Gift from './Gift';
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
@@ -22,7 +23,10 @@ function App() {
           path="/"
           element={<ProductList onAddToCart={handleAddToCart} />}
         />
-
+        <Route
+            path="/gift"
+            element={<Gift onAddToCart={handleAddToCart} />}
+          />
         {/* Tea Collection Page */}
         <Route
           path="/tea"

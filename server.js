@@ -1,37 +1,32 @@
+require('dotenv').config();
+
 const express = require('express');
-const mysql = require('mysql2/promise');
 const cors = require('cors');
+const mongoose = require('mongoose');
 
 const app = express();
 app.use(cors());
-app.use(express.json()); // JSON パース用に追加
+app.use(express.json());
 
-// DB接続プール
-const pool = mysql.createPool({
-  host: '127.0.0.1',
-  port: 3306,
-  user: 'testuser',
-  password: 'testpass',
-  database: 'testdb01',
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0,
-  acquireTimeout: 60000,
-  timeout: 60000
+const mongoURI = process.env.MONGO_URI
+
+mongoose.connect(mongoURI)
+  .then(() => console.log("Connected to MongoDB"))
+  .catch(err => console.log(err));
+
+const teaSchema = new mongoose.Schema({
+  id: String,
+  name: String,
+  price: Number,
+  benefit: String,
+  image: String
 });
 
+const Tea = mongoose.model('teas', teaSchema);
 
-// 🚀 Serve React build output
-app.use(express.static('dist'));
-app.use('/image', express.static('image'));
-
-// SPA fallback - serve index.html for all non-API routes
-const path = require('path');
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+app.get('/api/teas', async (req, res) => {
+  const tea = await Tea.find();
+  res.json(tea);
 });
 
-// サーバー起動
-app.listen(3002, '0.0.0.0', () => {
-  console.log('Server running on port 3002');
-});
+app.listen(5000, () => console.log("Server running on port 5000"));
