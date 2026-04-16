@@ -248,3 +248,23 @@ header {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(192,57,43,0.35);
 }
+
+
+.infographic-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;       
+    margin: 0 auto;    
+}
+
+.scrolling-img {
+    width: 100%;     
+    height: auto;
+    display: block;   
+}
+
+@media (max-width: 768px) {
+    .infographic-container {
+        width: 90%;     
+    }
+}
