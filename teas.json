@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "coll1",
+    "name": "Darjeeling Tea",
+    "price": 1800,
+    "benefit": "Improves digestion and immunity",
+    "image": "images/Darjeeling.jpg"
+  },
+  {
+    "_id": "coll2",
+    "name": "Earl Grey",
+    "price": 1200,
+    "benefit": "Reduces stress and boosts heart health",
+    "image": "images/earl.jpg"
+  },
+  {
+    "_id": "coll3",
+    "name": "Assam Tea",
+    "price": 1000,
+    "benefit": "Boosts energy and improves focus",
+    "image": "images/assam.jpg"
+  },
+  {
+    "_id": "coll4",
+    "name": "Chamomile",
+    "price": 980,
+    "benefit": "Helps in relaxation and sleep",
+    "image": "images/chamomile.jpg"
+  },
+  {
+    "_id": "coll5",
+    "name": "Matcha",
+    "price": 2500,
+    "benefit": "Rich in antioxidants",
+    "image": "images/matcha.jpg"
+  },
+  {
+    "_id": "coll6",
+    "name": "Oolong Tea",
+    "price": 1600,
+    "benefit": "Supports weight management",
+    "image": "images/oolong.jpg"
+  },
+  {
+    "_id": "coll7",
+    "name": "Green Tea",
+    "price": 900,
+    "benefit": "Improves metabolism",
+    "image": "images/green.jpg"
+  },
+  {
+    "_id": "coll8",
+    "name": "White Tea",
+    "price": 2000,
+    "benefit": "Anti-aging properties",
+    "image": "images/white.jpg"
+  },
+  {
+    "_id": "coll9",
+    "name": "Masala Tea",
+    "price": 800,
+    "benefit": "Boosts immunity and warmth",
+    "image": "images/masala.jpg"
+  },
+  {
+    "_id": "coll10",
+    "name": "Herbal Mix",
+    "price": 1100,
+    "benefit": "Detox and relaxation",
+    "image": "images/herbal.jpg"
+  }
+]

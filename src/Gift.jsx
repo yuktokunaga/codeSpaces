@@ -1,14 +1,15 @@
 import React from 'react';
-import darjeeling from "./assets/images/Darjeeling.jpg";
-import earlgrey from "./assets/images/earl.jpg";
-import assam from "./assets/images/assam.jpg";
-import chamomile from "./assets/images/chamomile.jpg";
-import matcha from "./assets/images/matcha.jpg";
-import oolong from "./assets/images/oolong.jpg";
-import green from "./assets/images/green.jpg";
-import white from "./assets/images/white.jpg";
-import masala from "./assets/images/masala.jpg";
-import herbal from "./assets/images/herbal.jpg";
+
+import darjeeling from "/images/Darjeeling.jpg";
+import earlgrey from "/images/earl.jpg";
+import assam from "/images/assam.jpg";
+import chamomile from "/images/chamomile.jpg";
+import matcha from "/images/matcha.jpg";
+import oolong from "/images/oolong.jpg";
+import green from "/images/green.jpg";
+import white from "/images/white.jpg";
+import masala from "/images/masala.jpg";
+import herbal from "/images/herbal.jpg";
 
 const giftCollections = [
   {
