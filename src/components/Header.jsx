@@ -2,6 +2,14 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Header({ cartCount }) {
+  
+  const footerScroller = () => {
+    const footer = document.getElementById('footer-id');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header>
       {/* TOP SECTION */}
@@ -78,14 +86,12 @@ function Header({ cartCount }) {
             About Us
           </NavLink>
 
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
-            }
+          <button 
+            onClick={footerScroller}
+            className="nav-link border-none bg-transparent cursor-pointer hover:text-japanet-red transition-colors"
           >
             Contact
-          </NavLink>
+          </button>
         </div>
       </nav>
     </header>

@@ -1,15 +1,6 @@
-
 ```
 codeSpaces
 ├─ cert.pem
-├─ dist
-│  ├─ assets
-│  │  ├─ index-BnALC209.js
-│  │  └─ index-CCTl3YkJ.css
-│  ├─ index.html
-│  ├─ logo.png
-│  ├─ main.js
-│  └─ style.css
 ├─ index.html
 ├─ key.pem
 ├─ package-lock.json
@@ -23,6 +14,9 @@ codeSpaces
 │  │  ├─ earl.jpg
 │  │  ├─ green.jpg
 │  │  ├─ herbal.jpg
+│  │  ├─ Infographics1.png
+│  │  ├─ Infographics2.png
+│  │  ├─ Infographics3.png
 │  │  ├─ masala.jpg
 │  │  ├─ matcha.jpg
 │  │  ├─ oolong.jpg
@@ -35,7 +29,6 @@ codeSpaces
 ├─ src
 │  ├─ App.css
 │  ├─ App.jsx
-│  ├─ assets
 │  ├─ components
 │  │  ├─ Footer.jsx
 │  │  ├─ Header.jsx
