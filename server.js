@@ -308,7 +308,7 @@ app.use('/public', express.static('public'));
 app.use('/images', express.static('public/images'));
 app.use('/image', express.static('image'));
 
-// サーバー起動
-app.listen(3002, '0.0.0.0', () => {
+//changed it from 0.0.0.0 to just :: to allow both ipv4 and ipv6 access 
+app.listen(3002, '::', () => {
   console.log('Server running on port 3002');
 });
